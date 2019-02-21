@@ -8,7 +8,7 @@ use RepositoryInterface;
 
 class CrudRepository implements RepositoryInterface
 {
-    // //model property on class instances
+    // model property on class instances
     protected $model;
 
     // Constructor to bind model to repo
