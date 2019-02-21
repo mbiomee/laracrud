@@ -1,0 +1,39 @@
+<?php
+namespace App\Http\Controllers;
+use App\{{modelName}};
+use App\Repositories\CrudRepository;
+use Illuminate\Http\Request;
+class {{modelName}}Controller extends Controller
+{
+    // space that we can use the repository from
+   protected $model;
+   public function __construct({{modelName}} ${{modelNameSingularLowerCase}})
+   {
+       // set the model
+       $this->model = new CrudRepository(${{modelNameSingularLowerCase}});
+   }
+   public function index{{modelName}}()
+   {
+       return $this->model->all();
+   }
+   public function store{{modelName}}(Request $request)
+   {
+       
+       // create record and pass in only fields that are fillable
+       return $this->model->create($request->only($this->model->getModel()->fillable));
+   }
+   public function show{{modelName}}($id)
+   {
+       return $this->model->show($id);
+   }
+   public function update{{modelName}}(Request $request, $id)
+   {
+       // update model and only pass in the fillable fields
+       $this->model->update($request->only($this->model->getModel()->fillable), $id);
+       return $this->model->find($id);
+   }
+   public function destroy({{modelName}}$id)
+   {
+       return $this->model->delete($id);
+   }
+}
