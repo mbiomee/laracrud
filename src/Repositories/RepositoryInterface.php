@@ -2,7 +2,7 @@
 
  namespace mbiomee\laracrud\Repositories;
 
-interface RepositoryInterfac
+interface RepositoryInterface
 {
     public function all();
 
