@@ -1,6 +1,6 @@
 <?php
 
-namespace mbiomee\laracrud;
+namespace Mbiomee\Laracrud;
 
 use Illuminate\Support\ServiceProvider;
 

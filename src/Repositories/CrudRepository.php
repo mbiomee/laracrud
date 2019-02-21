@@ -1,5 +1,5 @@
 <?php
- namespace mbiomee\laracrud\Repositories;
+ namespace Mbiomee\Laracrud\Repositories;
 
 use Illuminate\Database\Eloquent\Model;
 

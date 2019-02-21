@@ -1,6 +1,6 @@
 <?php
 
- namespace mbiomee\laracrud\Repositories;
+ namespace Mbiomee\Laracrud\Repositories;
 
 interface RepositoryInterface
 {
