@@ -4,8 +4,14 @@ namespace Mbiomee\Laracrud;
 
 use Illuminate\Support\ServiceProvider;
 
+use Mbiomee\Laracrud\Console\CrudGenerator;
+
 class LaracrudServiceProvider extends ServiceProvider
 {
+
+    protected $commands = [
+        CrudGenerator::class,
+    ];
     /**
      * Register services.
      *
@@ -13,7 +19,7 @@ class LaracrudServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->commands($this->commands);
     }
 
     /**
