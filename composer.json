@@ -4,15 +4,15 @@
     "authors": [
         {
             "name": "Mostafa Biomee",
-            "email": "m.biomee@gmail.com",
-            "website": "https://egydevs.co/packages/laracrud",
-            "git": "https://github.com/mbiomee/laracrud"
+            "email": "m.biomee@gmail.com"
+            
         }
     ],
     
     "minimum-stability": "dev",
     "autoload": {
             "psr-4": {
+                
                 "mbiomee\\laracrud\\": "src/",
                 "Tests\\": "tests/"
             }
