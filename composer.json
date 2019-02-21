@@ -1,0 +1,20 @@
+{
+    "name": "mbiomee/laracrud",
+    "description": "LaraCrud is CRUD genrator aplaying SOLID princibales",
+    "authors": [
+        {
+            "name": "Mostafa Biomee",
+            "email": "m.biomee@gmail.com",
+            "website": "https://egydevs.co",
+            "git": "https://github.com/mbiomee/laracrud"
+        }
+    ],
+    
+    "minimum-stability": "dev",
+    "autoload": {
+            "psr-4": {
+                "mbiomee\\laracrud\\": "src/",
+                "Tests\\": "tests/"
+            }
+        }
+}
